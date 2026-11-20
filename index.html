@@ -1,13 +1,115 @@
-<!DOCTYPE HYML>
-<!-- I LEARNED THAT THE HTML SYNTAX IS THE MAIN PART OF THIS CODE-->
-<HTML>
- <!--I LEARNED THAT THE HEAD IS HOW YOU MANIPULATE THE NAME OF THE PROJECT--> 
-<HEAD>
-  <TITLE>MY FIRST WEBSIE</TITLE>
-</HEAD>
-<!-- AND THE BOD BRIMG DESIGN OR FUNCTION INTO THE PROJECT-->
-<BODY>
-  <HI>CYBER SECURITY</HI>
-  <P>MY FIRST</P>
-</BODY>
-</HTML>
+<!DOCTYPE html>
+<!-- This line tells the browser that this is an HTML5 webpage. -->
+<html lang="en">
+<!-- lang="en" means the page content is written in English. -->
+
+<head>
+<!-- The head contains information about the page and its design. -->
+<meta charset="UTF-8">
+<!-- This lets the browser display letters and symbols correctly. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- This helps the website fit phone, tablet, and computer screens. -->
+<title>CyberSafe Blog</title>
+<!-- This is the title shown on the browser tab. -->
+
+<style>
+/* CSS controls how the webpage looks. */
+*{box-sizing:border-box}
+/* Makes width and height calculations easier. */
+body{margin:0;background:#0b0915;color:white;font-family:Arial,sans-serif;text-align:center}
+/* Removes the default page margin and sets the dark background, white text, font, and alignment. */
+header{padding:20px;background:#151027;color:#b68cff}
+/* Styles the top part of the website where the logo and menu appear. */
+nav a{color:white;margin:12px;text-decoration:none}
+/* Styles the navigation links: white text, spacing, and no underline. */
+.hero{padding:65px 20px;background:linear-gradient(120deg,#170d35,#090914)}
+/* Creates the main introduction area with purple-to-dark background. */
+h1{font-size:42px;margin:10px}
+/* Makes the main heading larger and adds a little space around it. */
+h1 span{color:#a66cff}
+/* Makes the word inside the span purple. */
+button{background:#792de0;color:white;border:0;padding:12px 22px;border-radius:20px}
+/* Styles the Learn More button with a purple background and rounded corners. */
+main{padding:25px}
+/* Adds space around the main content. */
+.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:15px}
+/* Places the tip cards in rows, centers them, and adds space between them. */
+.card{background:#19142b;border:1px solid #7139b5;border-radius:14px;padding:20px;width:190px}
+/* Gives each tip card a dark background, purple border, rounded corners, and fixed width. */
+.card h3{color:#bd91ff}
+/* Makes each card heading light purple. */
+footer{padding:20px;color:#c6b5e8;border-top:1px solid #7139b5}
+/* Styles the bottom footer with spacing, light-purple text, and a top border. */
+</style>
+<!-- End of the CSS design section. -->
+</head>
+
+<body>
+<!-- The body contains everything visitors can see on the webpage. -->
+
+<header>
+<!-- Website header: logo and navigation menu. -->
+<h2>🛡️ CyberSafe</h2>
+<!-- The website name and shield symbol. -->
+<nav>
+<!-- Navigation links let visitors jump to page sections. -->
+<a href="#home">Home</a>
+<!-- Clicking Home moves to the section with id="home". -->
+<a href="#tips">Tips</a>
+<!-- Clicking Tips moves to the section with id="tips". -->
+<a href="#about">About</a>
+<!-- Clicking About moves to the section with id="about". -->
+</nav>
+</header>
+
+<section class="hero" id="home">
+<!-- Hero section: the main title and short introduction. -->
+<h1>Cybersecurity for <span>Beginners</span></h1>
+<!-- Main heading; the word Beginners is purple because it is inside span. -->
+<p>Stay safe online with simple tips.</p>
+<!-- A short sentence explaining the blog. -->
+<button onclick="document.getElementById('tips').scrollIntoView()">Learn More</button>
+<!-- When clicked, JavaScript scrolls the page down to the tips section. -->
+</section>
+
+<main id="tips">
+<!-- Main section containing the five cybersecurity recommendations. -->
+<h2>Top 5 Cybersecurity Tips</h2>
+<!-- Heading for the list of tips. -->
+<div class="cards">
+<!-- This div groups all the recommendation cards together. -->
+
+<div class="card"><h3>🔑 Passwords</h3><p>Use strong, unique passwords.</p></div>
+<!-- Card 1: recommends using strong and different passwords. -->
+<div class="card"><h3>🛡️ 2FA</h3><p>Add another layer of security.</p></div>
+<!-- Card 2: recommends two-factor authentication. -->
+<div class="card"><h3>💻 Updates</h3><p>Keep your software updated.</p></div>
+<!-- Card 3: recommends installing software updates. -->
+<div class="card"><h3>⚠️ Scams</h3><p>Avoid suspicious links.</p></div>
+<!-- Card 4: reminds visitors to be careful with suspicious links. -->
+<div class="card"><h3>☁️ Backups</h3><p>Keep copies of important files.</p></div>
+<!-- Card 5: recommends keeping backup copies of important files. -->
+
+</div>
+<!-- End of the cards container. -->
+</main>
+
+<section id="about">
+<!-- About section explains what the blog is about. -->
+<h2>About CyberSafe</h2>
+<!-- Heading for the About section. -->
+<p>A simple blog that teaches people how to stay safe online.</p>
+<!-- Short description of the website's purpose. -->
+</section>
+
+<footer>
+<!-- Footer is the bottom section of the webpage. -->
+© 2026 CyberSafe | Stay Secure.
+<!-- Copyright-style text and closing message. -->
+</footer>
+
+</body>
+<!-- End of the visible webpage content. -->
+</html>
+<!-- End of the HTML document. -->
+
